@@ -148,7 +148,7 @@ public class UserResource extends BaseResource {
         }
         
         // Validate the input data
-        password = ValidationUtil.validateLength(password, "password", 8, 50, true);
+        password = ValidationUtil.validatePassword(password, "password");
         email = ValidationUtil.validateLength(email, "email", 1, 100, true);
         
         // Update the user
